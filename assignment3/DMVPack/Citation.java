@@ -21,7 +21,11 @@ public class Citation {
         this.registration = registration;
     }
 
-    public Date getDate() {
+    public Citation(Registration registration2, String details) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Date getDate() {
         return date;
     }
 
@@ -56,9 +60,6 @@ public int hashCode() {
     return Objects.hash(date, offenceCode, amount, status, registration);
     
 	}
-
-public Object getOwner() {
-	return null;
-	}
 }
+
 
