@@ -141,7 +141,7 @@ public class MyScanner {
 	        source.mark(2);
 	        nextToken = source.read();
 	    }
-	    while ((nextToken >= 48 && nextToken <= 57) || (nextToken == 46 && noDec) { // Allow digits and decimal point
+	    while ((nextToken >= 48 && nextToken <= 57) || (nextToken == 46 && noDec)) { // Allow digits and decimal point
 	        buffer += asciiToString(nextToken);
 	        if (nextToken == 46) {
 	        	noDec = false;
